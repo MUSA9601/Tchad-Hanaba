@@ -1,4 +1,3 @@
-# Tchad-Hanana
 .testimonials {
     text-align: center;
     padding: 3rem;
