@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tchad Hanana - Rencontres Authentiques</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Style général */
+        body {
+            background-color: #f5f5f5;
+        }
+
+        /* Header */
+        .header {
+            background-color: #FF6B6B;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-links a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: #FF6B6B;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            padding: 1rem 2rem;
+            background-color: #FF6B6B;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            background-color: #FF5252;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Tchad Hanana ❤️</div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <a href="#features">Fonctionnalités</a>
+            <a href="#download">Télécharger</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div>
+            <button class="cta-button">Inscription</button>
+            <button class="cta-button">Connexion</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Rencontrez l'âme sœur au Tchad</h1>
+            <p>Authenticité • Sécurité • Traditions</p>
+            <button class="cta-button" style="margin-top: 2rem;">Commencer maintenant</button>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>🔒 Sécurisé</h3>
+            <p>Profils vérifiés pour des rencontres authentiques</p>
+        </div>
+        <div class="feature-card">
+            <h3>📍 Local</h3>
+            <p>Connectez-vous avec des célibataires près de chez vous</p>
+        </div>
+        <div class="feature-card">
+            <h3>❤️ Simple</h3>
+            <p>Un système de matching intuitif</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2023 Tchad Hanana - Tous droits réservés</p>
+        <p>Contact : contact@tchadhanana.td</p>
+    </footer>
+</body>
+</html>
